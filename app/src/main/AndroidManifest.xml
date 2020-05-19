@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.belajar.toko">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".config.PrefsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".checkout.Checkout"></activity>
+        <activity android:name=".cart.DetailCart" />
+        <activity android:name=".cart.CartAdapter" />
+        <activity android:name=".cart.Cart" />
+        <activity android:name=".category.Detail" />
+        <activity android:name=".category.DetailcategoryAdapter" />
+        <activity android:name=".profile.Login" />
+        <activity
+            android:name=".help.DetailHelp"
+            android:label="Detail Help"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".help.HelpAdapter" />
+        <activity android:name=".feed.DetailFeed" />
+        <activity android:name=".feed.FeedAdapter" />
+        <activity android:name=".profile.Profile" />
+        <activity android:name=".feed.Feed" />
+        <activity
+            android:name=".help.Help"
+            android:label="Help" />
+        <activity android:name=".Home" />
+        <activity
+            android:name=".product.DetailProduct"
+            android:label="Detail Product"
+            android:parentActivityName=".product.Product" />
+        <activity android:name=".product.ProductAdapter" />
+        <activity android:name=".product.Product" />
+        <activity
+            android:name=".category.DetailCategory"
+            android:label="Detail Category"
+            android:parentActivityName=".category.Category" />
+        <activity
+            android:name=".category.CategoryAdapter"
+            android:label="Category"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".category.Category" />
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="Register"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

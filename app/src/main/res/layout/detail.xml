@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/detail_product" />
+
+<!--    <RelativeLayout-->
+<!--        android:background="@color/grey"-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="220dp" />-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/card"-->
+<!--            android:clipToPadding="true"-->
+<!--            android:layout_marginTop="165dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:elevation="2dp"-->
+<!--            android:paddingBottom="90dp"-->
+<!--            app:cardBackgroundColor="@color/white"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/name"-->
+<!--                    android:text="Name of Product"-->
+<!--                    android:layout_below="@+id/tanggal"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:textColor="@color/hitam"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/lin1"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_below="@+id/name"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:src="@drawable/usd"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp">-->
+
+<!--                    </ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:text="Rp:"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textColor="@color/colorAccent"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/price"-->
+<!--                        android:layout_below="@+id/name"-->
+<!--                        android:text="Rp.80000"-->
+<!--                        android:textColor="@color/colorAccent"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/lin2"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_below="@+id/lin1"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:src="@drawable/item"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_height="30dp">-->
+
+<!--                    </ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:text="Stock :"-->
+<!--                        android:textColor="@color/hitam"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/stock"-->
+<!--                        android:text="12"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textColor="@color/hitam"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/line"-->
+<!--                    android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                    android:textColor="@color/hitam"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_below="@+id/lin2"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/desc"-->
+<!--                    android:text="Description"-->
+<!--                    android:textColor="@color/colorAccent"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_below="@+id/line"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/description"-->
+<!--                    android:layout_below="@+id/desc"-->
+<!--                    android:paddingBottom="40dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/hitam"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/card"-->
+<!--            android:layout_alignParentBottom="true">-->
+<!--            <Button-->
+<!--                android:id="@+id/addtocart"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@color/colorPrimary"-->
+<!--                android:text="ADD TO CART"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </Button>-->
+
+<!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+</ScrollView>
+    <!--<ScrollView-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".category.DetailCategory"-->
+    <!--    android:padding="5dp">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/image"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="220dp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/name"-->
+    <!--            android:text="Name"-->
+    <!--            android:textSize="22dp"-->
+    <!--            android:textColor="@color/hitam"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/price"-->
+    <!--            android:text="Rp.80000"-->
+    <!--            android:textColor="@color/colorAccent"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:textSize="20dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />\-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/stock"-->
+    <!--            android:text="Stock :"-->
+    <!--            android:textSize="20dp"-->
+    <!--            android:textColor="@color/hitam"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/descripton"-->
+    <!--            android:text="Isi Description"-->
+    <!--            android:textColor="@color/hitam"-->
+    <!--            android:textSize="20dp"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+    <!--    </LinearLayout>-->
+
+
+    <!--</ScrollView>-->

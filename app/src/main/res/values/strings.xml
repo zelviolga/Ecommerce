@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Toko</string>
+
+    <string name="text_none">-</string>
+    <string name="text_zero">0</string>
+    <string name="title_seller">Informasi Penjual</string>
+    <string name="title_buy">Beli</string>
+    <string name="title_hint_search">Mau belanja apa hari ini...</string>
+    <string name="title_handphone">Handphone</string>
+    <string name="title_kategori">Kategori Produk</string>
+    <string name="title_laptop">Laptop</string>
+    <string name="title_headphone">Headphone</string>
+    <string name="title_printer">Printer</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_new_product">Produk Terbaru</string>
+    <string name="title_address">Cilame, Bandung Barat</string>
+    <string name="title_informasi">Informasi Pribadi</string>
+    <string name="title_product_sell">Produk yang dijual</string>
+
+
+    <string name="salam_malam">Good Night, Good Customer &#129303;</string>
+    <string name="salam_pagi">Good Morning, Dear &#128522;</string>
+    <string name="salam_siang">Good Afternoon, Baby &#128526;</string>
+    <string name="salam_sore">Good Afternoon Dude &#128513;</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".cart.DetailCart">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textbanyak"
+        android:text="Banyak :"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/hitam"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rcl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/banyak"
+        android:text="100"
+        android:layout_below="@+id/rcl"
+        android:textSize="20dp"
+        android:layout_marginLeft="110dp"
+        android:textColor="@color/hitam"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnknownId">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/inputalamat"
+        android:layout_below="@+id/textbanyak"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Masukkan Alamat"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/inputpesan"
+        android:layout_below="@+id/inputalamat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Pesan..."
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/chekout"
+        android:background="@color/blue"
+        android:text="CHECKOUT"
+        android:layout_below="@+id/inputpesan"
+        android:layout_marginTop="310dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+
+
+</RelativeLayout>

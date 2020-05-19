@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbardua" />
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_height="100dp"
+        android:id="@+id/holder"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+        <!--android:text="Profil :"-->
+        <!--android:textSize="24dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/hitam"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <ImageView
+            android:layout_marginRight="270dp"
+            android:src="@drawable/f"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/username"
+            android:text="MY USERNAME"
+            android:layout_marginLeft="170dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/email"-->
+<!--        android:text="EMAIL"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/hitam"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/fullname"-->
+<!--        android:text="FULLNAME"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/hitam"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/phone"-->
+<!--        android:text="PHONE"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/hitam"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/address"-->
+<!--        android:text="ADDRESS"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/hitam"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/relative"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_love" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/hitam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My favourite" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_share" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/hitam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/hitam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Message" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mycart"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_cart" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/hitam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Cart" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_close" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/hitam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout My Account" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/logout"-->
+<!--        android:text="LOGOUT ACCOUNT"-->
+<!--        android:textSize="19dp"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+
+</LinearLayout>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".profile.Profile">-->
+
+<!--<include layout="@layout/toolbardua" />-->
+
+<!--<TextView-->
+<!--    android:layout_centerInParent="true"-->
+<!--    android:text="My PROFILE"-->
+<!--    android:textSize="40dp"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--</TextView>-->
+
+<!--</RelativeLayout>-->

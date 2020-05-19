@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".profile.Login">
+
+    <include layout="@layout/toolbardua" />
+
+<!--    <ImageView-->
+<!--        android:layout_below="@+id/tToolbar"-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:contentDescription="@string/app_name" />-->
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linear"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/logo"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/username"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Username"-->
+<!--                android:inputType="textEmailAddress" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:passwordToggleEnabled="true">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/password"-->
+<!--                android:hint="Password"-->
+<!--                android:inputType="textPassword" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/signuppengaduan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:padding="8dp"-->
+<!--            android:text="don_t_have_an_account_register_here"-->
+<!--            android:textColor="@color/colorPrimary" />-->
+<!--    </LinearLayout>-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/login"-->
+<!--        android:layout_below="@+id/linear"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text="Login"/>-->
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_below="@+id/tToolbar"
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/username"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Sandi"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:imeActionId="6"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/login"
+                style="?android:textAppearanceSmall"
+                android:background="@color/colorPrimary"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:text="Don't have an account?"
+                android:layout_below="@+id/login"
+                android:textSize="12dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/hitam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/signuppengaduan"
+                android:text="REGISTER"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="260dp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
